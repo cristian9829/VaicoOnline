@@ -18,9 +18,17 @@
 @import 'hover';
 @import "font-awesome";
 
+@import "components";
+
 /*Styles Bootstrap*/
 @import "styles";
 
 /*Styles Nav and Footer*/
 @import "nav";
 @import "footer";
+
+/*Styles Home*/
+@import "home/hero";
+@import "home/about";
+@import "home/customers";
+@import "home/uses-cases";
