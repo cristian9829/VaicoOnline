@@ -13,6 +13,14 @@
  *= require hover
  *= require font-awesome
  */
+@import "bootstrap_override";
 @import "bootstrap";
 @import 'hover';
- @import "font-awesome";
+@import "font-awesome";
+
+/*Styles Bootstrap*/
+@import "styles";
+
+/*Styles Nav and Footer*/
+@import "nav";
+@import "footer";
