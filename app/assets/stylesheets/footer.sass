@@ -5,5 +5,31 @@
 		justify-content: space-between
 
 .copy
+	height: auto
 	background-color: #1C265B
-	border-top: 1px solid black
+
+/* ===================== Responsive Movil ============================ */
+
+@media screen and (max-width:480px)
+		.section__footer
+		p
+			font-size: small
+		a 
+			font-size: smaller
+
+	
+/*====================== Responsive Laptop ===========================*/
+@media screen and (max-width:1024px) and(min-width: 769px)
+
+
+/*========================Responsive Tablets=============================*/
+@media screen and (max-width:768px) and (min-width: 481px)
+	.section__footer
+		p
+			font-size: smaller
+		a 
+			font-size: smaller      
+
+	.copy
+		p
+		font-size: smaller

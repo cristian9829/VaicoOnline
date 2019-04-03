@@ -16,3 +16,64 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+// barra de navegacion blanco
+function navDark(element){
+	$("#effect-container-nav").removeClass("container-effect-hide")
+	$("#effect-container-nav").addClass("container-effect-show")
+
+	/*Color de la ltra y fondo del navbar*/
+	$(element).addClass("bg-third")
+	$(element).addClass("navbar-dark")
+	/*Efecto padding navbar*/
+	$(element).addClass("effect-nav-dark")
+	$(element).removeClass("remove-efect-nav-dark")
+}
+
+
+// barra de navegacion transparente
+function navTransparent (element){
+	$("#effect-container-nav").removeClass("container-effect-show")
+	$("#effect-container-nav").addClass("container-effect-hide")
+
+
+	$(element).addClass("navbar-light")
+	$(element).removeClass("bg-third navbar-dark")
+	$(element).css({
+		"background":"transparent",
+		"transition":"background 2.50s"
+	});
+	$(element).removeClass("effect-nav-dark")
+	$(element).addClass("remove-efect-nav-dark")
+}
+
+function navSm(){
+	$("nav").css("background-color","#2A3462");
+	$("nav .container .logo").hide();
+	$("nav .container .logo-white").show();
+}
+
+
+
+$(document).ready(function(){ 
+	$( window ).resize(function(){
+    sizeWindow = $( window ).width();
+    sizeMovil = 480;
+    if (sizeWindow <= sizeMovil ) { /*Styles y events in device size screen movil*/
+      console.log("movil")
+      if ($(window).scrollTop() >= 0){
+				navSm();
+			}
+  	}else{
+  		console.log("normal")
+  	}
+  });
+
+	$(window).scroll(function(){
+		if ($(window).scrollTop() >= 15){
+		  navDark("#nav-home");
+		}else{
+		  navTransparent("#nav-home"); 	
+		}
+	});
+})
+

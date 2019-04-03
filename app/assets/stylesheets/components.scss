@@ -4,17 +4,17 @@
 
 
 .slider{
-	width: 95%;
-	margin: auto;
+	width: 100%;
 	overflow:hidden; 
 	ul{
 		display: flex;
+		justify-content: space-between;
 		padding: 0;
-		width: 400%;
-
-		animation: cambio 20s infinite;
+		width:200%;
+		
+		/*animation: cambio 5s infinite;
 		animation-direction: alternate; 
-		animation-timing-function: linear;
+		animation-timing-function: linear;*/
 		li{
 			width: 100%;
 			list-style: none;
@@ -29,30 +29,15 @@
 
 @keyframes cambio{
 	0%{
-		margin-left: 0;
+		margin-left: 0%;
 	}
-	20%{
-		margin-left: 0;
-	}
-	25%{
-		margin-left: -100%;
-	}
-	45%{
-		margin-left: -100%;
-	}
-
 	50%{
-		margin-left: -200%;
+		margin-left: 0%;
 	}
-	70%{
-		margin-left: -200%;
-	}
-
-	55%{
-		margin-left: -300%;
-	}
+	
 	100%{
-		margin-left: -300%;
+		margin-left: 5%;
 	}
-
 }
+
+

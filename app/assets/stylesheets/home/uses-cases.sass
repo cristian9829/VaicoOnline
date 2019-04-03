@@ -2,23 +2,49 @@
 	height: auto
 	.container-text
 		margin: 20px 0px
-	.carousel
-		.carousel-indicators
-			position: relative
-			margin-left: 0px
-			width: 300%
-		.carousel-indicators li 
-		  box-sizing: content-box
-		  flex: 0 1 auto
-		  width: 120px
-		  height: 55px
-		  margin-right: 3px
-		  margin-left: 3px
-		  text-indent: -999px
-		  cursor: pointer
-		  position: relative
-		  img
-		   position: absolute
-		   top: 0
-		   left: 0
-		   height: inherit
+		
+	.carousel-indicators
+		position: relative
+		margin-left: 0px
+	.carousel-indicators li 
+	  box-sizing: content-box
+	  flex: 0 1 auto
+	  width: 120px
+	  height: 55px
+	  margin-right: 3px
+	  margin-left: 3px
+	  text-indent: -999px
+	  cursor: pointer
+	  position: relative
+	  img
+	   position: absolute
+	   top: 0
+	   left: 0
+	   height: inherit
+
+
+/* ===================== Responsive Movil ============================ */
+
+@media screen and (max-width:480px)
+	.section__home-uses-cases
+		.slider
+			display: none
+/*====================== Responsive Laptop ===========================*/
+@media screen and (max-width:1024px) and(min-width: 769px)
+
+
+/*========================Responsive Tablets=============================*/
+@media screen and (max-width:768px) and (min-width: 481px)
+	.section__home-uses-cases
+		h1
+			font-size: xx-large
+		p
+			font-size: smaller
+		.carousel-item
+			.col-md-6
+				h3
+					font-size: x-large
+				p
+					font-size: smaller
+
+			

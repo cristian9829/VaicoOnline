@@ -1,2 +1,68 @@
+#effect-container-nav
+	position: absolute
+	width: 60px
+	height: 3000px
+	left: -60px
+	z-index: -100
+	border: none
+	margin: 0
+
+.container-effect-hide
+	@extend #effect-container-nav
+	transform: rotate(0deg)
+	transition: transform 1s
+
+
+.container-effect-show
+	@extend #effect-container-nav
+	left: -50px
+	transform: rotate(90deg)
+	transition: transform 0.50s
+
 #nav-home
+	display: flex
+	justify-content: space-between
+	background-color: transparent
+
+#nav-movil
+	display: none
+
+.display-none
+	display: none
+	
+.effect-nav-dark
+	a
+	padding-left: 4%
+	transition-timing-function: ease
+	transition: padding-left 0.5s
+	ul
+		padding-right: 2.5%
+		transition: padding-right 0.5s
+		transition-timing-function: ease
+
+.remove-efect-nav-dark
+	a
+	padding-left: 0%
+	transition-timing-function: ease
+	transition: padding-left 0.5s
+	ul
+		margin-right: 0%
+		transition-timing-function: ease
+		transition: padding-right 0.5s
+
+
+/* ===================== Responsive Movil ============================ */
+
+@media screen and (max-width:480px)
+	#nav-movil
+		display: flex
+
+	#nav-home
+		display: none
+/*====================== Responsive Laptop ===========================*/
+@media screen and (max-width:1024px) and(min-width: 769px)
+
+
+/*========================Responsive Tablets=============================*/
+@media screen and (max-width:768px) and (min-width: 481px)
 	

@@ -1,8 +1,28 @@
 .section__home-hero
-	border: 1px solid red
 	height: 550px
 	display: flex
 	justify-content: center
 	flex-direction: column
-	.container-text
-		margin-top:
+
+
+
+/* ===================== Responsive Movil ============================ */
+
+@media screen and (max-width:480px)
+	.section__home-hero
+		margin: 80px 0px
+		height: auto
+		img
+			margin: 50px 0px
+	
+/*====================== Responsive Laptop ===========================*/
+@media screen and (max-width:1024px) and(min-width: 769px)
+
+
+/*========================Responsive Tablets=============================*/
+@media screen and (max-width:768px) and (min-width: 481px)
+	.section__home-hero
+		h3
+			font-size: 20px
+		p
+			font-size: smaller
