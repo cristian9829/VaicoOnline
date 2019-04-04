@@ -21,9 +21,11 @@ function navDark(element){
 	$("#effect-container-nav").removeClass("container-effect-hide")
 	$("#effect-container-nav").addClass("container-effect-show")
 
-	/*Color de la ltra y fondo del navbar*/
+	/*Color de la letra y fondo del navbar*/
 	$(element).addClass("bg-third")
 	$(element).addClass("navbar-dark")
+	$(".nav-link").addClass("text-white")
+	$(".nav-item .btn").removeClass("btn-outline-primary").addClass("btn-primary")
 	/*Efecto padding navbar*/
 	$(element).addClass("effect-nav-dark")
 	$(element).removeClass("remove-efect-nav-dark")
@@ -35,6 +37,8 @@ function navTransparent (element){
 	$("#effect-container-nav").removeClass("container-effect-show")
 	$("#effect-container-nav").addClass("container-effect-hide")
 
+	$(".nav-link").removeClass("text-white")
+	$(".nav-item .btn").removeClass("btn-primary").addClass("btn-outline-primary")
 
 	$(element).addClass("navbar-light")
 	$(element).removeClass("bg-third navbar-dark")
